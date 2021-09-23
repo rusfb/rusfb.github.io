@@ -33,14 +33,14 @@
     <br><br>
     <button id="addToCartButton">Add to Cart</button>
     <script type="text/javascript">
-      $('#$addToCartButton').click(function() {
+      document.getElementById("addToCartButton").addEventListener("click", function() {
         fbq('track', 'AddToCart', {currency: "USD", value: 30.00});
       });
     </script>
     <br><br>
     <button id="purchaseButton">Purchase</button>
     <script type="text/javascript">
-      $('#$purchaseButton').click(function() {
+      document.getElementById("purchaseButton").addEventListener("click", function() {
         fbq('track', 'Purchase', {currency: "USD", value: 30.00});
       });
     </script>
