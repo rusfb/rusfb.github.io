@@ -26,7 +26,7 @@
     <br>
     <button id="viewContentButton">View Content</button>
     <script type="text/javascript">
-      $('#$viewContentButton').click(function() {
+      document.getElementById("viewContentButton").addEventListener("click", function() {
         fbq('track', 'ViewContent', {currency: "USD", value: 30.00});
       });
     </script>
