@@ -24,14 +24,20 @@
       Please tap on buttons below to fire Pixel events.
     </div>
     <br>
+    <button id="viewContentButton">View Content</button>
+    <script type="text/javascript">
+      $('#$viewContentButton').click(function() {
+        fbq('track', 'ViewContent', {currency: "USD", value: 30.00});
+      });
+    </script>
+    <br><br>
     <button id="addToCartButton">Add to Cart</button>
     <script type="text/javascript">
       $('#$addToCartButton').click(function() {
         fbq('track', 'AddToCart', {currency: "USD", value: 30.00});
       });
     </script>
-    <br>
-    <br>
+    <br><br>
     <button id="purchaseButton">Purchase</button>
     <script type="text/javascript">
       $('#$purchaseButton').click(function() {
