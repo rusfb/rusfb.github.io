@@ -20,5 +20,17 @@
   </head>
   <body>
     Hello world!
+    <button id="addToCartButton">Add to Cart</button>
+    <script type="text/javascript">
+      $('#$addToCartButton').click(function() {
+        fbq('track', 'AddToCart', {currency: "USD", value: 30.00});
+      });
+    </script>
+    <button id="purchaseButton">Purchase</button>
+    <script type="text/javascript">
+      $('#$purchaseButton').click(function() {
+        fbq('track', 'Purchase', {currency: "USD", value: 30.00});
+      });
+    </script>
   </body>
 </html>
