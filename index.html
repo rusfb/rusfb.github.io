@@ -1,8 +1,7 @@
 <html>
-  <head>
-    <meta name="facebook-domain-verification" content="p1iwqd3u3n7ct0i0xrgpiz7v93yz3j" />
-    <!-- Facebook Pixel Code -->
-    <script>
+<head><meta charset="utf-8">
+	<title>RusStore</title>
+	<meta name="facebook-domain-verification" content="xn1yf4n5mzhn8w7n3mrzubipyp6atr" /><!-- Facebook Pixel Code --><script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -13,37 +12,100 @@
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '547367413045873');
       fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
+    </script><noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=547367413045873&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <div>
-      Please tap on buttons below to fire Pixel events.
-    </div>
-    <br>
-    <button id="viewContentButton">View Content</button>
-    <script type="text/javascript">
+    /></noscript><!-- End Facebook Pixel Code -->
+	<style type="text/css">div {
+         width:600px;
+         margin:auto;
+         color:red;
+         }
+         h1, h2{
+         text-align:center;
+         color:green;
+         font-style:italic;
+         font-size: 80px;
+         }
+         .buttonGreen {
+         width:600px;
+         margin:auto;
+         background-color: #4CAF50; /* Green */
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 48px;
+         }
+         .buttonRed {
+         width:600px;
+         margin:auto;
+         background-color: #f44336; /* Red */
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 48px;
+         }
+         b {
+         margin:auto;
+         color: #f44336;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 40px;
+         }
+         a {
+         width:600px;
+         margin:auto;
+         background-color: #008CBA; /* Blue */
+         border: none;
+         color: white;
+         padding: 10px 0px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 48px;
+         }
+	</style>
+</head>
+<body>
+<div>
+<h1>Welcome to the X-domain!</h1>
+
+<div><b>Please tap on buttons below to fire Pixel events.</b></div>
+
+<p><br />
+<b>These events are added both domains&#39; configs:</b><button class="buttonGreen" id="viewContentButton">View Content</button><script type="text/javascript">
       document.getElementById("viewContentButton").addEventListener("click", function() {
         fbq('track', 'ViewContent', {currency: "USD", value: 30.00});
       });
-    </script>
-    <br><br>
-    <button id="addToCartButton">Add to Cart</button>
-    <script type="text/javascript">
+    </script><br />
+<br />
+<button class="buttonGreen" id="addToCartButton">Add to Cart</button><script type="text/javascript">
       document.getElementById("addToCartButton").addEventListener("click", function() {
         fbq('track', 'AddToCart', {currency: "USD", value: 30.00});
       });
-    </script>
-    <br><br>
-    <button id="purchaseButton">Purchase</button>
-    <script type="text/javascript">
+    </script><br />
+<br />
+<button class="buttonGreen" id="purchaseButton">Purchase</button><script type="text/javascript">
       document.getElementById("purchaseButton").addEventListener("click", function() {
         fbq('track', 'Purchase', {currency: "USD", value: 30.00});
       });
+    </script></p>
+<br />
+<b>These events are added only to current domain&#39;s config:</b><button class="buttonRed" id="addToWishListButton">Add to Wishlist</button><script type="text/javascript">
+      document.getElementById("addToWishListButton").addEventListener("click", function() {
+        fbq('track', 'AddToWishlist', {currency: "USD", value: 30.00});
+      });
     </script>
-  </body>
+
+<p></p>
+
+<p><a href="https://russtore.xyz">Go to the main store!</a></p>
+</div>
+</body>
 </html>
